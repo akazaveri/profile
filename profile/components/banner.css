@@ -1,0 +1,56 @@
+
+.banner {
+  padding: 100px;
+  height: 500px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.banner .fa-angles-down {
+  position: absolute;
+  left: 50%;
+  top: 103%;
+  transform: translate(-50%, -100%);
+  font-size: 40px;
+}
+
+.banner .fa-angles-down:hover {
+  text-shadow: 2px 2px 30px rgb(170, 170, 170);
+}
+
+.banner .banner-text {
+  position:absolute;
+  margin: 0 auto;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
+  width:100%;
+  transition: 0.2s ease;
+}
+
+.banner .banner-text a {
+  font-family: 'Syne', sans-serif;
+  font-size: 90px;
+  color:rgb(252, 252, 252);
+  text-shadow: 2px 2px 30px black;
+  margin-top: 50px;
+  text-decoration: none;
+}
+
+.banner .banner-text a:hover {
+  text-shadow: 1px 1px 30px rgb(246, 249, 189);
+}
+
+.banner img {
+  width: 500px;
+  text-align: center;
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -45%); */
+}
