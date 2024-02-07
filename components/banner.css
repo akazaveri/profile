@@ -1,7 +1,7 @@
 
 .banner {
   padding: 100px;
-  height: 700px;
+  height: 575px;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -16,11 +16,18 @@
   top: 103%;
   transform: translate(-50%, -100%);
   font-size: 40px;
+  animation: blinker 1s linear infinite;
 }
 
-.banner .fa-angles-down:hover {
-  text-shadow: 2px 2px 30px rgb(170, 170, 170);
+@keyframes blinker {
+  50% {
+    opacity: 0.5;
+  }
 }
+
+/* .banner .fa-angles-down:hover {
+  text-shadow: 2px 2px 30px rgb(170, 170, 170);
+} */
 
 .banner .banner-text {
   position:absolute;
@@ -30,7 +37,7 @@
   top: 50%;
   transform: translate(-50%, -60%);
   width:100%;
-  transition: initial 0.5s ease;
+  transition: 1s ease;
 }
 
 .banner .banner-text a {
@@ -40,18 +47,22 @@
   text-shadow: 2px 2px 30px black;
   margin-top: 50px;
   text-decoration: none;
+  transition: initial 0.5s ease;
 }
 
 .banner .banner-text a:hover {
   text-shadow: 1px 1px 30px rgb(175, 177, 123);
-  transition: initial 0.5s ease;
 }
 
 .banner img {
   width: 500px;
   text-align: center;
-  /* position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -45%); */
 }
+/*
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+} */
