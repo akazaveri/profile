@@ -30,7 +30,7 @@
   top: 50%;
   transform: translate(-50%, -60%);
   width:100%;
-  transition: 0.2s ease;
+  transition: initial 0.5s ease;
 }
 
 .banner .banner-text a {
@@ -43,7 +43,8 @@
 }
 
 .banner .banner-text a:hover {
-  text-shadow: 1px 1px 30px rgb(246, 249, 189);
+  text-shadow: 1px 1px 30px rgb(175, 177, 123);
+  transition: initial 0.5s ease;
 }
 
 .banner img {

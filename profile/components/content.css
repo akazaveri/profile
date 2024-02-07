@@ -3,11 +3,19 @@
   flex-direction: column;
   justify-content: center;
   padding: 0 200px;
+  row-gap: 15px;
+}
+
+.content hr {
+  border: 0.1px solid rgb(45, 45, 45);
 }
 
 .content-block {
   outline: none;
   cursor: pointer;
+  transition-property: initial;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
 }
 
 .hidden-block {
@@ -15,12 +23,23 @@
   font-family: 'Syne', sans-serif;
   font-size: 40px;
   color: rgb(252, 252, 252);
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   line-height: 1.4;
+  transition-property: initial;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.content-block h2:hover {
+  text-decoration: underline;
 }
 
 .content-block:focus + .hidden-block {
   display: block;
+  transition-property: initial;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
 }
 
 .content-block .work-color {
@@ -29,16 +48,32 @@
   color: rgb(215, 67, 13);
 }
 
-.content-block i {
+.content-block .work-color > i {
   padding-left: 20px;
   font-size: 60px;
   color: rgb(215, 67, 13);
 }
 
-.content-block #passion-color {
+.content-block .passion-color {
+  font-family: 'Syne', sans-serif;
+  font-size: 80px;
   color: rgb(26, 32, 194);
 }
 
-.content-block #fun-color {
+.content-block .passion-color > i {
+  padding-left: 20px;
+  font-size: 60px;
+  color: rgb(26, 32, 194);
+}
+
+.content-block .fun-color {
+  font-family: 'Syne', sans-serif;
+  font-size: 80px;
+  color: cadetblue;
+}
+
+.content-block .fun-color > i {
+  padding-left: 20px;
+  font-size: 60px;
   color: cadetblue;
 }
